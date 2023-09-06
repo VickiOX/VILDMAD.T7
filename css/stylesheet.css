@@ -7,3 +7,26 @@
 
 
 /*Mobilformat først*/
+/*startopsætnig*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.grid{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+img{
+    max-width:100%;
+    height: auto;
+    display: block;
+}
+main{
+    margin: auto;
+}
