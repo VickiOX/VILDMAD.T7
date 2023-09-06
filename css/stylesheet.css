@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-.grid{
+.grid{ /* grid der skal bruges til kategori-side*/
     max-width: 600px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
