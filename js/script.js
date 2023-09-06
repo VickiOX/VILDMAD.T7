@@ -4,3 +4,5 @@
 ○ Hvilke tiltag i har gjort ift. at gøre sitet mere bæredygtigt 
 ○ Dokumentation af hvordan Git og branches er blevet brugt
 */
+
+//mobil format først
