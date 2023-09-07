@@ -10,3 +10,5 @@ window.addEventListener("scroll", function(){
     }
     lastScrollTop = scrollTop
 })
+/* credit for the header code
+https://www.youtube.com/watch?v=JEBgqbZWYIQ */
