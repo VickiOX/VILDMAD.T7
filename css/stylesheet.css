@@ -29,4 +29,55 @@ img{
 }
 main{
     margin: auto;
+    padding-top: 45%;
+    padding-bottom: 45%;
 }
+h1,h2{
+    text-align: center;
+    padding-bottom:2rem;
+}
+
+/*Forside*/
+.cirkel{
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+}
+
+.vinter , .forår, .sommer, .efterår{
+    display: flex;
+    position: absolute;
+}
+.vinter{
+    top:6rem;
+    left:5rem;
+}
+.forår{
+    top:6rem;
+    right:5rem;
+}
+.sommer{
+    bottom:6rem;
+    left:5rem;
+    
+}
+.efterår{
+    bottom:6rem;
+    right:5rem;
+}
+
+/*footer*/
+footer p{
+    text-align: end;
+    padding-top: 10px;
+    }
+    
+    footer{
+        border-top: 1px solid black;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
