@@ -14,3 +14,20 @@ fetch(url)
 function Show(){
     console.log();
 }
+
+
+fetch("https://jrbobbgkocqmvubehqtz.supabase.co/rest/v1/skovdata?select=id",{
+    method:"GET",
+    headers:{
+        apikey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpyYm9iYmdrb2NxbXZ1YmVocXR6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTM5OTk5MTUsImV4cCI6MjAwOTU3NTkxNX0.Icz35OBcSiV2DSuLi9aszBlD1Bz2SJIqiTcaYc-9rSY"
+    }
+})
+.then((res) => res.json())
+.then(showData);
+
+function showData(items){
+    console.log(items);
+}
+
+
+
