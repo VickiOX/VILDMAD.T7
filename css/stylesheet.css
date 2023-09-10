@@ -62,7 +62,7 @@ main {
     .kate-p2 {
         position: absolute;
         font-family: block;
-        top: 79%;
+        top: 65%;
         left: -10%;
     }
 
@@ -76,43 +76,43 @@ main {
     .ikon2,
     .ikon3,
     .ikon4 {
-        max-width: 100px;
-        height: 100px;
-        display: block;
-        border-radius: 50%;
-        object-fit: cover;
+        max-width: 85px;
+        height: 50px;
+        border-radius: 56%;
     }
 
     .ikon0 {
         border-radius: 42%;
-        max-width: 204px;
-        height: 257px;
+        max-width: 214px;
+        height: 258px;
         position: absolute;
         top: 18%;
-        left: 0%;
+        left: -2%;
     }
 
     .ikon1 {
         position: relative;
         top: -3%;
+        left: 35%;
     }
 
     .ikon2 {
         position: relative;
-        top: -116%;
-        left: 28%;
+        top: -131%;
+        left: 54%;
     }
 
     .ikon3 {
         position: relative;
-        left: 56%;
-        top: -232%;
+        left: 72%;
+        top: -262%;
+
     }
 
     .ikon4 {
         position: relative;
-        left: 84%;
-        top: -346%;
+        left: 90%;
+        top: -393%;
     }
 
     .grid {
@@ -125,6 +125,7 @@ main {
         border: 1px solid #000;
         padding: 1rem;
         border-radius: 56px;
+        padding-bottom: 0%;
     }
 
 }
