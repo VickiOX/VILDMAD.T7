@@ -35,7 +35,7 @@ main {
     margin: auto;
 }
 
-/******************** KATEGORI ***********************/
+/******************** KATEGORI (MOBIL) ***********************/
 
 @media screen and (max-width: 600px) {
 
@@ -56,14 +56,16 @@ main {
     .kate-p1 {
         position: relative;
         font-family: block;
-        left: 34%;
+        left: 36%;
+        font-size: 14px;
     }
 
     .kate-p2 {
         position: absolute;
         font-family: block;
-        top: 65%;
-        left: -10%;
+        top: 62%;
+        left: -5%;
+        font-size: 14px;
     }
 
     .ikon-row {
@@ -83,35 +85,35 @@ main {
 
     .ikon0 {
         border-radius: 42%;
-        max-width: 214px;
-        height: 258px;
+        max-width: 199px;
+        height: 247px;
         position: absolute;
         top: 18%;
-        left: -2%;
+        left: 1%;
     }
 
     .ikon1 {
         position: relative;
-        top: -3%;
-        left: 35%;
+        top: 3%;
+        left: 34%;
     }
 
     .ikon2 {
         position: relative;
         top: -131%;
-        left: 54%;
+        left: 51%;
     }
 
     .ikon3 {
         position: relative;
-        left: 72%;
+        left: 68%;
         top: -262%;
 
     }
 
     .ikon4 {
         position: relative;
-        left: 90%;
+        left: 85%;
         top: -393%;
     }
 
@@ -126,6 +128,10 @@ main {
         padding: 1rem;
         border-radius: 56px;
         padding-bottom: 0%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
 }
+
+/********************* KATEGORI (WEB) *************************/
