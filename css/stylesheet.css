@@ -131,6 +131,7 @@ h2{
     height: 80vw;
     border: 1px solid black;
     overflow: hidden;
+
 }
 
 .vinter,
@@ -198,15 +199,20 @@ h2{
 }
 
 /*****************************FOOTER*************************/
-footer p {
+.footer_stay p {
     text-align: end;
     padding-top: 10px;
 }
 
-footer {
+.footer_stay {
     border-top: 1px solid black;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    
 }
 
 
