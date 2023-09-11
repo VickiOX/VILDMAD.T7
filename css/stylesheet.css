@@ -6,6 +6,31 @@
 */
 
 
+
+/************************FARVER**************************/
+
+/*Disse farver er ikke dem vi går med men er et eksemple*/
+html{
+    --primary-color: #f5f5f5; /*baggrund farve, hører til body*/
+    --secondary-color: #2e2d2b; /*font farve, gælder alle fonte*/
+    --tertiary-color: #7e7e7eac; /*boxshadow farve til links*/
+
+    --bane-color: #a9eab6; /*baggrund farve til box*/
+
+    --kfk-color: #D9F2FF; /*baggrund farve til box*/
+
+    --kontakt-color: #ffd9b8; /*baggrund farve til box*/
+
+}
+
+/* når i skal skrive en farve skriv ex: 
+
+p{
+    color: var(----primary-color);
+}
+*/
+
+
 /*Mobilformat først*/
 /*startopsætnig*/
 * {
