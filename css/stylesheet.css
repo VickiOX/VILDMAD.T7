@@ -64,3 +64,124 @@ img{
 main{
     margin: auto;
 }
+
+/*hamburger menu*/
+@media(max-width:860px) {
+    .nav-link {
+        display: flex;
+        background-image: url(../img/menu-btn.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        justify-content: center;
+        width: 150px;
+        height: 60px;
+        padding: 5%;
+        margin: 15%;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+
+    .nav-link:active {
+        scale: 0.9;
+    }
+
+    .navbar {
+        width: 100%;
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-branding {
+        text-shadow: 4px 4px#62A8A1;
+        color: #C7E6F5;
+        margin: 10px;
+        font-size: x-large;
+        font-family: "CherryBombOne";
+        animation-name: floating;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+        background-color: black;
+    }
+
+
+    .containerBurger {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 10px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        margin-top: 0px;
+        display: block;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        min-height: 100vh;
+        position: fixed;
+        z-index: 0;
+        background-color: #f5f5f5df;
+        padding: 40px;
+        transition: 0.4s;
+    }
+
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .om {
+        position: relative;
+        top: 100px;
+        left: 4px;
+    }
+
+    .port {
+        position: relative;
+        top: 30px;
+        left: 10px;
+    }
+
+    .home {
+        position: relative;
+        top: 100px;
+        left: -100px;
+    }
+}
