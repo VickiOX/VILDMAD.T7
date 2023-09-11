@@ -110,7 +110,7 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     text-align: center;
-    padding:12px 12px 0 12px;
+    padding: 12px 12px 0 12px;
 }
 
 .breadcrumb-item {
