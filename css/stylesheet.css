@@ -13,7 +13,6 @@
     margin:0;
     box-sizing: border-box;
 }
-
 .grid{ /* grid der skal bruges til kategori-side*/
     max-width: 600px;
     display: grid;
@@ -21,11 +20,11 @@
     gap: 1rem;
     justify-content: space-between;
 }
-
 img{
     max-width:100%;
     height: auto;
     display: block;
+    border-radius: 50%;
 }
 main{
     margin: auto;
@@ -43,31 +42,62 @@ h1,h2{
     display: flex;
     margin: auto;
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    width: 80vw;
+    height: 80vw;
     border: 1px solid black;
+    overflow: hidden;
 }
-
 .vinter , .forår, .sommer, .efterår{
     display: flex;
     position: absolute;
 }
 .vinter{
-    top:6rem;
-    left:5rem;
+    left: 0;
+    top: 0;
 }
 .forår{
-    top:6rem;
-    right:5rem;
+    top: 0;
+    right: 0;
 }
 .sommer{
-    bottom:6rem;
-    left:5rem;
-    
+    bottom: 0;
+    right: 0;
 }
 .efterår{
-    bottom:6rem;
-    right:5rem;
+    bottom: 0;
+    left: 0;
+}
+.cirkel a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  background: blue;
+  border: 1px solid black;
+}
+
+.vinter p{
+    left: 17vw;
+    top: 20vw;
+}
+.forår p{
+    top: 20vw;
+    right: 17vw;
+}
+.sommer p{
+    bottom: 20vw;
+    right: 17vw;
+}
+.efterår p{
+    bottom: 20vw;
+    left: 17vw;
+}
+
+.cirkel p{
+    position: absolute;
 }
 
 /*footer*/
@@ -81,3 +111,43 @@ footer p{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+
+/*
+@media(orientation: portrait){
+    https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation
+}
+*/
+
+
+@media (min-width: 860px){ 
+  
+    .cirkel{
+        width: 30vw;
+        height: 30vw;
+        margin: auto;
+    }
+    
+    main{
+        margin: auto;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .vinter p{
+        left: 7vw;
+        top: 8vw;
+    }
+    .forår p{
+        top: 8vw;
+        right: 7vw;
+    }
+    .sommer p{
+        bottom: 8vw;
+        right: 7vw;
+    }
+    .efterår p{
+        bottom: 8vw;
+        left: 7vw;
+    }
+}
