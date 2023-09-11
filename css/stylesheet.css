@@ -8,25 +8,34 @@
 
 /*Mobilformat først*/
 /*startopsætnig*/
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-.grid{ /* grid der skal bruges til kategori-side*/
+
+ /* grid der skal bruges til kategori-side*/
+
+
+.grid {
+    /* grid der skal bruges til kategori-side*/
     max-width: 600px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
     gap: 1rem;
     justify-content: space-between;
+    border: 1px solid #000;
+    padding: 1rem;
 }
-img{
-    max-width:100%;
+
+img {
+    max-width: 100%;
     height: auto;
     display: block;
     border-radius: 50%;
 }
-main{
+
+main {
     margin: auto;
     padding-top: 45%;
     padding-bottom: 45%;
@@ -36,7 +45,7 @@ h1,h2{
     padding-bottom:2rem;
 }
 
-/*Forside*/
+/*--------------------------------------------------Forside-----------------------------------------------------------------*/
 .cirkel{
     border-radius: 50%;
     display: flex;
@@ -151,3 +160,185 @@ footer p{
         left: 7vw;
     }
 }
+
+
+
+/******************** KATEGORI (BOX 1) - MOBIL ***********************/
+
+
+
+.kate-h2 {
+    font-size: xxx-large;
+    position: relative;
+    left: 42%;
+    padding-top: 11%;
+    padding-bottom: 10%;
+}
+
+.kate-h3 {
+    position: relative;
+    left: 51%;
+    font-size: xx-large;
+}
+
+.kate-p1 {
+    position: relative;
+    font-family: block;
+    left: 36%;
+    font-size: 14px;
+}
+
+.kate-p2 {
+    position: absolute;
+    font-family: block;
+    top: 62%;
+    left: -5%;
+    font-size: 14px;
+}
+
+.ikon-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ikon1,
+.ikon2,
+.ikon3,
+.ikon4 {
+    max-width: 85px;
+    height: 50px;
+    border-radius: 56%;
+}
+
+.ikon0 {
+    border-radius: 42%;
+    max-width: 199px;
+    height: 247px;
+    position: absolute;
+    top: 18%;
+    left: 1%;
+}
+
+.ikon1 {
+    position: relative;
+    top: 3%;
+    left: 34%;
+}
+
+.ikon2 {
+    position: relative;
+    top: -131%;
+    left: 51%;
+}
+
+.ikon3 {
+    position: relative;
+    left: 68%;
+    top: -262%;
+
+}
+
+.ikon4 {
+    position: relative;
+    left: 85%;
+    top: -393%;
+}
+
+.grid {
+    /* grid der skal bruges til kategori-side*/
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 1rem;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 56px;
+    padding-bottom: 0%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 10%;
+}
+
+
+
+/*************** KATEGORI (BOKS 2) - MOBIL ****************/
+
+
+.grid_2 {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 1rem;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 56px;
+    padding-bottom: 0%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.kate-p01 {
+    position: relative;
+    font-family: block;
+    font-size: 14px;
+    left: -9%;
+}
+
+.kate-h3_2 {
+    position: relative;
+    left: 1%;
+    font-size: xx-large;
+}
+
+.ikon00 {
+    border-radius: 42%;
+    max-width: 199px;
+    height: 247px;
+    position: absolute;
+    top: 89%;
+    left: 55%;
+}
+
+
+.ikon11,
+.ikon22,
+.ikon33,
+.ikon44 {
+    max-width: 85px;
+    height: 50px;
+    border-radius: 56%;
+}
+
+.ikon22 {
+    position: relative;
+    left: 17%;
+    top: -133%;
+}
+
+.ikon33 {
+    position: relative;
+    top: -267%;
+    left: 34%;
+}
+
+.ikon44 {
+    position: relative;
+    top: -401%;
+    left: 51%;
+}
+
+.kate-p02 {
+    position: absolute;
+    font-family: block;
+    top: 134%;
+    left: -5%;
+    font-size: 14px;
+}
+
+/*************** KATEGORI (BOX 1) - WEB ****************/
+
+@media (min-width: 860px) {}
+
