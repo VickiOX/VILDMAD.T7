@@ -15,23 +15,50 @@ function Show(){
     console.log();
 }
 
-
-
-
-
+const subcategories = ['Løvskov', 'Nåleskov']; //erstat med fetch
+ //fange template
+ const subcategory_template = document.querySelector("#subcategory_template").content;
+ const product_template = document.querySelector("#product_template").content;
 
 
 const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("liv");
+const category = urlParams.get("category");
+document.querySelector("h1").textContent = category
+document.querySelector("." + category).classList.add("active");
 
 // fetch
-fetch("https://kea-alt-del.dk/t7/api/products?limit=50&start=10&category=" + id)
+fetch("https://kea-alt-del.dk/t7/api/products?limit=50&start=10&category=" + category)
 .then(res=>res.json())
 .then(showProducts);
 
-function showProducts(products){
+function showProducts(){
     //looper og kalder showProuct ental
-    products.forEach(showProduct);
+   // products.forEach(showProduct);
+
+
+    //template debugging
+    console.table(subcategories);
+    subcategories.forEach(debugShowCategories);
+}
+
+function debugShowCategories(subcategory){
+  console.log(subcategory);
+
+ 
+
+  //lave en kopi
+  const subcategory_template_copy = subcategory_template.cloneNode(true);
+  subcategory_template_copy.querySelector("h2").textContent = subcategory;
+
+  const products = ['Kantarel','Bøg', 'Karl Johan', 'Skov jordbær', 'Skovfyr']; //erstat med fetch
+  products.forEach(product => {
+    console.log(product);
+    const product_template_copy = product_template.cloneNode(true);
+    product_template_copy.querySelector("h3").textContent= product;
+    subcategory_template_copy.querySelector(".grid").appendChild(product_template_copy);
+  });
+  //appende
+  document.querySelector("main").appendChild(subcategory_template_copy);
 }
 
 function showProduct(product){

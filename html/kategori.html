@@ -19,111 +19,63 @@
 
     <main>
         <div class="breadcrumb">
-            <div class="breadcrumb-item">
-                <a href="#">VINTER</a>
+            <div class="breadcrumb-item Vinter">
+                <a href="kategori.html?category=Vinter">VINTER</a>
             </div>
-            <div class="breadcrumb-item">
-                <a href="#">FORÅR</a>
+            <div class="breadcrumb-item Forår">
+                <a href="kategori.html?category=Forår">FORÅR</a>
             </div>
-            <div class="breadcrumb-item">
-                <a href="#">EFTERÅR</a>
+            <div class="breadcrumb-item Efterår">
+                <a href="kategori.html?category=Efterår">EFTERÅR</a>
             </div>
-            <div class="breadcrumb-item">
-                <a href="#">SOMMER</a>
+            <div class="breadcrumb-item Sommer">
+                <a href="kategori.html?category=Sommer">SOMMER</a>
             </div>
         </div>
 
         <h1>Titel</h1> <!-- Her skal stå hvilken årstid-->
-
-        <h2>Undertitle</h2> 
-        <div class="grid">
-           <!-- Her skal stå hvilken skov-->
-            <article class="product ">
-                <h3 class="">Overskrift</h3>
-                <img class="product_img " src="g3.webp" alt="test1">
-                <p class="padding text1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, soluta magnam
-                    maiores consequatur
-                    libero repellendus eligendi nihil impedit laudantium sapiente cupiditate quo tenetur officiis
-                    ratione, accusamus assumenda sunt quis similique.</p>
-                <div class="grid_ikon padding">
-                    <img class="ikon1" src="g3.webp" alt="">
-                    <img class="ikon2" src="g3.webp" alt="">
-                    <img class="ikon3" src="g3.webp" alt="">
-                    <img class="ikon4" src="g3.webp" alt="">
-                    <p>hej_1</p>
-                    <p>hej</p>
-                    <p>hej</p>
-                    <p>hej</p>
-                </div>
-
-                <p class="padding text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat maxime,
-                    asperiores, reiciendis
-                    praesentium sint eos officia distinctio at illo, nulla deserunt voluptate soluta! Ratione veniam, a
-                    quod amet officiis nostrum!</p>
-
-            </article>
-
-
-         
-            <article class="product ">
-                <h3 class="">Overskrift</h3>
-                <img class="product_img " src="g3.webp" alt="test1">
-                <p class="padding text1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, soluta magnam
-                    maiores consequatur
-                    libero repellendus eligendi nihil impedit laudantium sapiente cupiditate quo tenetur officiis
-                    ratione, accusamus assumenda sunt quis similique.</p>
-                <div class="grid_ikon padding">
-                    <img class="ikon1" src="g3.webp" alt="">
-                    <img class="ikon2" src="g3.webp" alt="">
-                    <img class="ikon3" src="g3.webp" alt="">
-                    <img class="ikon4" src="g3.webp" alt="">
-                    <p>hej</p>
-                    <p>hej</p>
-                    <p>hej</p>
-                    <p>hej</p>
-                </div>
-
-                <p class="padding text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat maxime,
-                    asperiores, reiciendis
-                    praesentium sint eos officia distinctio at illo, nulla deserunt voluptate soluta! Ratione veniam, a
-                    quod amet officiis nostrum!</p>
-
-            </article>
-
-            <article class="product ">
-                <h3 class="">Overskrift</h3>
-                <img class="product_img " src="g3.webp" alt="test1">
-                <p class="padding text1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, soluta magnam
-                    maiores consequatur
-                    libero repellendus eligendi nihil impedit laudantium sapiente cupiditate quo tenetur officiis
-                    ratione, accusamus assumenda sunt quis similique.</p>
-                <div class="grid_ikon padding">
-                    <img class="ikon1" src="g3.webp" alt="">
-                    <img class="ikon2" src="g3.webp" alt="">
-                    <img class="ikon3" src="g3.webp" alt="">
-                    <img class="ikon4" src="g3.webp" alt="">
-                    <p>hej</p>
-                    <p>hej</p>
-                    <p>hej</p>
-                    <p>hej</p>
-                </div>
-
-                <p class="padding text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat maxime,
-                    asperiores, reiciendis
-                    praesentium sint eos officia distinctio at illo, nulla deserunt voluptate soluta! Ratione veniam, a
-                    quod amet officiis nostrum!</p>
-
-            </article>
-
-        </div>
+        
     </main>
 
 
     <footer>
         <p>@copyright</p>
     </footer>
+<template id="subcategory_template">
+    <div>
+        <h2>Undertitle</h2>   <!-- Her skal stå hvilken skov-->
+        <div class="grid"></div>
+    </div>
+</template>
 
 
+<template id="product_template">
+    <article class="product ">
+        <h3 class="">Overskrift</h3>
+        <img class="product_img " src="g3.webp" alt="test1">
+        <p class="padding text1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, soluta magnam
+            maiores consequatur
+            libero repellendus eligendi nihil impedit laudantium sapiente cupiditate quo tenetur officiis
+            ratione, accusamus assumenda sunt quis similique.</p>
+        <div class="grid_ikon padding">
+            <img class="ikon1" src="g3.webp" alt="">
+            <img class="ikon2" src="g3.webp" alt="">
+            <img class="ikon3" src="g3.webp" alt="">
+            <img class="ikon4" src="g3.webp" alt="">
+            <p>Sæson</p>
+            <p>Sankested</p>
+            <p>Sankning</p>
+            <p>Håndtering</p>
+        </div>
+
+        <p class="padding text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat maxime,
+            asperiores, reiciendis
+            praesentium sint eos officia distinctio at illo, nulla deserunt voluptate soluta! Ratione veniam, a
+            quod amet officiis nostrum!</p>
+
+    </article>
+</template>
+<script src="../js/script.js"></script>
 </body>
 
 </html>
