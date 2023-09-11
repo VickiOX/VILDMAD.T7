@@ -39,7 +39,7 @@ main {
 
 
 
-.kate-h2 {
+/* .kate-h2 {
     font-size: xxx-large;
     position: relative;
     left: 42%;
@@ -119,7 +119,7 @@ main {
 
 .grid {
     /* grid der skal bruges til kategori-side*/
-    max-width: 600px;
+/* max-width: 600px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
     gap: 1rem;
@@ -131,14 +131,14 @@ main {
     margin-left: 3%;
     margin-right: 3%;
     margin-bottom: 10%;
-}
+} */
 
 
 
 /*************** KATEGORI (BOKS 2) - MOBIL ****************/
 
 
-.grid_2 {
+/* .grid_2 {
     max-width: 600px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
@@ -208,8 +208,22 @@ main {
     top: 134%;
     left: -5%;
     font-size: 14px;
+} */
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-top: 5%;
+    padding-left: 1%;
 }
 
-/*************** KATEGORI (BOX 1) - WEB ****************/
-
-@media (min-width: 860px) {}
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
