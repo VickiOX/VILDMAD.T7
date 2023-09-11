@@ -107,6 +107,19 @@ h2{
     padding: 0 10px 12px 10px;
 }
 
+/*****************************FOOTER***********************/
+footer p{
+    text-align: end;
+    padding: 10px 0;
+    }
+    
+    footer{
+        border-top: 1px solid black;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
 /******************** BREADCRUMS ***********************/
 
 /* Default styles for breadcrumb */
