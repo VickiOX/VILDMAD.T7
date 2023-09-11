@@ -14,10 +14,7 @@
     box-sizing: border-box;
 }
 
- /* grid der skal bruges til kategori-side*/
-
-
-
+/* grid der skal bruges til kategori-side*/
 
 img {
     max-width: 100%;
@@ -31,13 +28,15 @@ main {
     padding-top: 45%;
     padding-bottom: 45%;
 }
-h1,h2{
+
+h1,
+h2 {
     text-align: center;
-    padding-bottom:2rem;
+    padding-bottom: 2rem;
 }
 
 /*--------------------------------------------------Forside-----------------------------------------------------------------*/
-.cirkel{
+.cirkel {
     border-radius: 50%;
     display: flex;
     margin: auto;
@@ -47,70 +46,82 @@ h1,h2{
     border: 1px solid black;
     overflow: hidden;
 }
-.vinter , .forår, .sommer, .efterår{
+
+.vinter,
+.forår,
+.sommer,
+.efterår {
     display: flex;
     position: absolute;
 }
-.vinter{
+
+.vinter {
     left: 0;
     top: 0;
 }
-.forår{
+
+.forår {
     top: 0;
     right: 0;
 }
-.sommer{
+
+.sommer {
     bottom: 0;
     right: 0;
 }
-.efterår{
+
+.efterår {
     bottom: 0;
     left: 0;
 }
-.cirkel a{
+
+.cirkel a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     position: absolute;
-  width: 50%;
-  height: 50%;
-  display: flex;
-  background: blue;
-  border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    background: blue;
+    border: 1px solid black;
 }
 
-.vinter p{
+.vinter p {
     left: 17vw;
     top: 20vw;
 }
-.forår p{
+
+.forår p {
     top: 20vw;
     right: 17vw;
 }
-.sommer p{
+
+.sommer p {
     bottom: 20vw;
     right: 17vw;
 }
-.efterår p{
+
+.efterår p {
     bottom: 20vw;
     left: 17vw;
 }
 
-.cirkel p{
+.cirkel p {
     position: absolute;
 }
 
 /*footer*/
-footer p{
+footer p {
     text-align: end;
     padding-top: 10px;
-    }
-    
-    footer{
-        border-top: 1px solid black;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+}
+
+footer {
+    border-top: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 
 /*
@@ -120,33 +131,36 @@ footer p{
 */
 
 
-@media (min-width: 860px){ 
-  
-    .cirkel{
+@media (min-width: 860px) {
+
+    .cirkel {
         width: 30vw;
         height: 30vw;
         margin: auto;
     }
-    
-    main{
+
+    main {
         margin: auto;
         padding-top: 4%;
         padding-bottom: 4%;
     }
 
-    .vinter p{
+    .vinter p {
         left: 7vw;
         top: 8vw;
     }
-    .forår p{
+
+    .forår p {
         top: 8vw;
         right: 7vw;
     }
-    .sommer p{
+
+    .sommer p {
         bottom: 8vw;
         right: 7vw;
     }
-    .efterår p{
+
+    .efterår p {
         bottom: 8vw;
         left: 7vw;
     }
@@ -332,4 +346,3 @@ footer p{
 /*************** KATEGORI (BOX 1) - WEB ****************/
 
 @media (min-width: 860px) {}
-
