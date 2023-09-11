@@ -51,8 +51,13 @@ h1,
 h2 {
     text-align: center;
 }
-
-h3 {
+h1{
+    padding-top: 30px;
+}
+h2{
+    padding-bottom: 20px;
+}
+ h3 {
     text-align: center;
     padding: 12px;
 }
@@ -61,7 +66,7 @@ h3 {
     border: 1px solid #000000;
     border-radius: 30px;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 
 }
 
