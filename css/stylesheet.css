@@ -35,7 +35,7 @@ main {
     margin: auto;
 }
 
-/******************** KATEGORI (MOBIL) ***********************/
+/******************** KATEGORI (BOX 1) - MOBIL ***********************/
 
 @media screen and (max-width: 600px) {
 
@@ -135,7 +135,7 @@ main {
 }
 
 
-/*************** KATEGORI (BOKS 2) ****************/
+/*************** KATEGORI (BOKS 2) - MOBIL ****************/
 
 @media screen and (max-width: 600px) {
     .grid_2 {
@@ -165,15 +165,50 @@ main {
         font-size: xx-large;
     }
 
+    .ikon00 {
+        border-radius: 42%;
+        max-width: 199px;
+        height: 247px;
+        position: absolute;
+        top: 89%;
+        left: 55%;
+    }
 
 
+    .ikon11,
+    .ikon22,
+    .ikon33,
+    .ikon44 {
+        max-width: 85px;
+        height: 50px;
+        border-radius: 56%;
+    }
 
+    .ikon22 {
+        position: relative;
+        left: 17%;
+        top: -133%;
+    }
 
+    .ikon33 {
+        position: relative;
+        top: -267%;
+        left: 34%;
+    }
 
+    .ikon44 {
+        position: relative;
+        top: -401%;
+        left: 51%;
+    }
 
-
-
-
+    .kate-p02 {
+        position: absolute;
+        font-family: block;
+        top: 134%;
+        left: -5%;
+        font-size: 14px;
+    }
 
 
 
