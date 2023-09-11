@@ -29,13 +29,13 @@ main {
     padding-bottom: 45%;
 }
 
-h1,
+/*h1,
 h2 {
     text-align: center;
     padding-bottom: 2rem;
-}
+}*/
 
-/*--------------------------------------------------Forside-----------------------------------------------------------------*/
+/***********************FORSIDE************************************/
 .cirkel {
     border-radius: 50%;
     display: flex;
@@ -111,7 +111,7 @@ h2 {
     position: absolute;
 }
 
-/*footer*/
+/*****************************FOOTER*************************/
 footer p {
     text-align: end;
     padding-top: 10px;
@@ -132,7 +132,7 @@ footer {
 
 
 @media (min-width: 860px) {
-
+    /*********************FORSIDE******************/
     .cirkel {
         width: 30vw;
         height: 30vw;
@@ -164,6 +164,7 @@ footer {
         bottom: 8vw;
         left: 7vw;
     }
+    /*******************************************/
 }
 
 
@@ -343,6 +344,4 @@ footer {
     font-size: 14px;
 }
 
-/*************** KATEGORI (BOX 1) - WEB ****************/
 
-@media (min-width: 860px) {}
