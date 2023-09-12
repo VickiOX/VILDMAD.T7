@@ -21,49 +21,6 @@
     gap: 1rem;
     justify-content: space-between;
 }
-
-nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    background: rgb(76, 165, 135);
-    padding: 0 10px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-}
-
-.logo{
-    max-width:18%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-.vild-logo{
-    max-width:50%;
-    height: auto;
-    display: block;
-}
-.scrollUl{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.scrollUl .scrollLi{
-    list-style: none;
-}
-
-.scrollUl .scrollLi a{
-    color: #fff;
-    padding: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-}
 section{
     box-sizing: border-box  ;
     padding: 150px 100px 100px;
@@ -76,21 +33,78 @@ img{
 main{
     margin: auto;
 }
+/*HEADER*/
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: rgb(76, 165, 135);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding: 0 5px;
+    max-width:80px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.vild-logo{
+    padding: 0 5px;
+    max-width:80px;
+    height: auto;
+    display: block;
+}
+.scrollUl{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.scrollUl .scrollLi, li{
+    list-style: none;
+}
+
+.scrollUl .scrollLi a{
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+}
+@media(min-width:860px){
+/*sub menu web format*/
+ul.dropdown{
+display: block;
+list-style: none;
+padding: 20px;
+}
+ul.dropdown{
+    background-color: rgb(76, 165, 135);
+    position: absolute;
+    display: none;
+}
+.nav-link.kategorier:hover{
+opacity: 0.5;}
+li:hover ul.dropdown{
+    display: block;
+}
+}
 
 /*hamburger menu*/
 @media(max-width:860px) {
     .nav-link {
-        display: grid;
-        background-image: url(../img/menu-btn.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        justify-content: end;
-        width: 150px;
-        height: 60px;
+        display: flex;
         padding: 5%;
-        margin: 15%;
-        border-radius: 6px;
-        transition: 0.2s;
+        margin: 0 50px;
+    }
+    .nav-item{
+        margin: 20px;
     }
 
     .nav-link:active {
@@ -100,28 +114,7 @@ main{
     .navbar {
         width: 100%;
         min-height: 80px;
-        display: grid;
         justify-content: space-between;
-        align-items:center;
-    }
-
-    .nav-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-    .nav-branding a{
-        padding: 0;
-    }
-
-    .nav-branding {
-        margin:0;
-        padding: 0;
-        animation-name: floating;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 2s;
     }
 
     .hamburger {
@@ -161,7 +154,7 @@ main{
     }
 
     .nav-menu {
-        margin-top: 0px;
+        margin: auto;
         display: block;
         top: 0;
         left: 100%;
@@ -170,12 +163,17 @@ main{
         position: fixed;
         z-index: 0;
         background-color: #5b8067df;
-        padding: 0px;
+        padding: 70px;
         transition: 0.4s;
     }
 
 
     .nav-menu.active {
         left: 0;
+    }
+    .kategorier, li{
+        font-size: 20px;
+        margin: 0 10px 0;
+        color: #c2dfc1;
     }
 }
