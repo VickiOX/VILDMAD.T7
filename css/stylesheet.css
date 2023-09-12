@@ -10,6 +10,7 @@
 /************************FARVER**************************/
 
 /*Disse farver er ikke dem vi går med men er et eksemple*/
+
 html{
     --primary-color: #6C805A; /*color til baggrund*/
     
@@ -26,7 +27,6 @@ html{
     --efterår-color: #CB9292; /*baggrund farve til box*/
 
     --vinter-color: #F2F2F2; /*baggrund farve til box*/
-
 }
 
 /* når i skal skrive en farve skriv ex: 
@@ -249,6 +249,7 @@ footer{ /* dette hører til kategori sitet og forsiden*/
 
 
 @media (min-width: 860px) {
+
     /*********************FORSIDE******************/
     .cirkel {
         width: 30vw;
@@ -281,6 +282,7 @@ footer{ /* dette hører til kategori sitet og forsiden*/
         bottom: 8vw;
         left: 7vw;
     }
+
     /*******************************************/
 }
 
