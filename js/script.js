@@ -63,7 +63,7 @@ function showProducts(){
 function debugShowCategories(subcategory){
   console.log(subcategory);
 
- 
+
 
   //lave en kopi
   const subcategory_template_copy = subcategory_template.cloneNode(true);
