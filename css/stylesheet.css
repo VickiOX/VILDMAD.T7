@@ -384,6 +384,7 @@ footer {
         left: 7vw;
     }
 
+    
 
     /*******************************************/
 
@@ -428,7 +429,6 @@ footer {
     /************************HEADER********************/
 
     ul.dropdown {
-
         display: block;
         list-style: none;
         padding: 20px;
@@ -445,11 +445,8 @@ footer {
     }
 
     li:hover ul.dropdown{
-            display: block;
-            }
-        
-
-
+        display: block;
+    }
 
 
 }
