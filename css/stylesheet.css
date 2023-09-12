@@ -487,6 +487,10 @@ footer {
     border: 0.5px solid #ccc;
 }
 
+.breadcrumb-item.active {
+    border-bottom: 0px;
+}
+
 .breadcrumb-item a {
     /* kun når han hover over kategorierne, at linen dukker op*/
     text-decoration: none;
