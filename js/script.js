@@ -33,8 +33,9 @@ function showData(items){
 function Show(){
     console.log();
 }
-
+//fetch data og brug data som et array
 const subcategories = ['Løvskov', 'Nåleskov']; //erstat med fetch
+
  //fange template
  const subcategory_template = document.querySelector("#subcategory_template").content;
  const product_template = document.querySelector("#product_template").content;

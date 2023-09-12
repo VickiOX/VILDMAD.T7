@@ -11,15 +11,21 @@
 
 /*Disse farver er ikke dem vi går med men er et eksemple*/
 html{
-    --primary-color: #f5f5f5; /*baggrund farve, hører til body*/
-    --secondary-color: #2e2d2b; /*font farve, gælder alle fonte*/
-    --tertiary-color: #7e7e7eac; /*boxshadow farve til links*/
+    --primary-color: #6C805A; /*color til baggrund*/
+    
+    --secondary-color: #E4E4E4; /*til font h1 og h2*/
+   
+    --tertiary-color: #363636; /*til font, heraf h3 og p*/
+    
+    --footer-color: #647852; /*color til footer*/
 
-    --bane-color: #a9eab6; /*baggrund farve til box*/
+    --forår-color: #BCC5B3; /*baggrund farve til box*/
 
-    --kfk-color: #D9F2FF; /*baggrund farve til box*/
+    --sommer-color: #EBE1B3; /*baggrund farve til box*/
 
-    --kontakt-color: #ffd9b8; /*baggrund farve til box*/
+    --efterår-color: #CB9292; /*baggrund farve til box*/
+
+    --vinter-color: #F2F2F2; /*baggrund farve til box*/
 
 }
 
@@ -31,12 +37,17 @@ p{
 */
 
 
+
 /*Mobilformat først*/
 /*startopsætnig*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color:var(--primary-color);
 }
 
 
@@ -59,6 +70,7 @@ p {
 h1,
 h2 {
     text-align: center;
+    color: var(--secondary-color);
 }
 h1{
     padding-top: 20px;
@@ -199,20 +211,33 @@ h2{
 }
 
 /*****************************FOOTER*************************/
-.footer_stay p {
+.footer_stay p {  /* dette hører til forsiden*/
     text-align: end;
     padding-top: 10px;
+    padding-right:10px;
 }
 
 .footer_stay {
     border-top: 1px solid black;
-    margin-left: -10px;
-    margin-right: -10px;
     position: fixed;
     bottom: 0;
     width: 100%;
-
     
+}
+
+footer p{ /* dette hører til kategori sitet*/
+    text-align: end;
+    padding: 10px 0;
+    padding-right:10px;
+    }
+    
+    footer{
+        border-top: 1px solid black;
+    }
+
+
+footer{ /* dette hører til kategori sitet og forsiden*/
+    background-color:var(--footer-color);
 }
 
 
@@ -260,19 +285,6 @@ h2{
 }
 
 
-
-
-/*****************************FOOTER***********************/
-footer p{
-    text-align: end;
-    padding: 10px 0;
-    }
-    
-    footer{
-        border-top: 1px solid black;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 
 
 /******************** BREADCRUMS ***********************/
