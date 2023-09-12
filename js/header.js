@@ -10,6 +10,11 @@ window.addEventListener("scroll", function(){
     }
     lastScrollTop = scrollTop
 })
+/*sub menu*/
+let subMenu = document.getElementById("subMenu");
+function toggleMenu(){
+    subMenu.classList.toggle("open-menu")
+}
 /*burgermenu*/
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
