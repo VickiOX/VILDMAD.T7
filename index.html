@@ -4,11 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylesheet.css">
+
+   
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+
     <title>index</title>
 </head>
 
 <body>
+    <header>
+        <!-- Navigations bar der gåt væk når man scroller ned og kommer frem når man scroller op-->
+        <div class="containerBurger">
+        <nav id="navbar">
+            <a href="https://vildmad.dk/dk" class="nav-branding"><img class="vild-logo" src="img/vild-mad-logo.webp" alt=""></a>
+            <a href="#" class="nav-branding"><img class="logo" src="img/logo.webp" alt=""></a>
+            <ul class="scrollUl nav-menu">
+                <li class="scrollLi nav-item"><a href="#" class="nav-link">Hjem</a></li>
+                <li class="scrollLi nav-item"><a href="html/kategori.html" class="nav-link">Kategori</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        </div>
+    </header>
     <main>
         <!--Teknisk dokumentation, eksempelvis i form af: 
 ○ En overordnet forklaring af opbygningen og flowet i jeres scripts, gerne i form af diagrammer samt valgte navne-konventioner o.lign. 
@@ -30,9 +52,12 @@
 
     </main>
 
+
     <footer class="footer_stay">
         <p>@copyright</p>
     </footer>
-</body>
 
+    <script src="js/header.js"></script>
+
+</body>
 </html>
