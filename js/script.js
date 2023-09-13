@@ -23,9 +23,10 @@ function showData(items){
 }
 
 //fetch data og brug data som et array
-const subcategories = ['Løvskov', 'Nåleskov']; //hard code
+const subcategories = ['Løvskov', 'Nåleskov']; //erstat med fetch
 
  //fange template
+ //const subcategory_template = document.querySelector("#subcategory_template").content;
  const product_template = document.querySelector("#product_template").content;
 
  //breadcrumb is active, markere hvilken kategories der ses
@@ -34,7 +35,22 @@ const category = urlParams.get("category");
 document.querySelector("h1").textContent = category
 document.querySelector("." + category).classList.add("active");
 
+/* // fetch
+fetch("https://kea-alt-del.dk/t7/api/products?limit=50&start=10&category=" + category)
+.then(res=>res.json())
+.then(showProducts);
+ */
+/* showProducts()
+function showProducts(){
+   // products.forEach(showProduct);
 
+
+    //template debugging
+    console.table(subcategories);
+    subcategories.forEach(debugShowCategories);
+}
+
+ */
 debugShowCategories()
 function debugShowCategories(){
 
@@ -42,7 +58,8 @@ function debugShowCategories(){
 
 
   //lave en kopi
-
+  //const subcategory_template_copy = subcategory_template.cloneNode(true);
+  //subcategory_template_copy.querySelector("h2").textContent = subcategory;
 
   fetch("https://jrbobbgkocqmvubehqtz.supabase.co/rest/v1/Vildmad_produkter?select=*&" + category + "=eq.true",{//brug * det henter alt
   method:"GET",
@@ -61,23 +78,19 @@ function debugShowCategories(){
     product_template_copy.querySelector(".text2").textContent= product.season;
     product_template_copy.querySelector(".product_img").src = product.image;
 
-
     // for at kunne ændre på text 2 via onclick skal vi have en identificator på click elementet (data-id)
-    
     product_template_copy.querySelector(".ikon1").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon2").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon3").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon4").setAttribute("data-id", product.id);
 
     //onclick er js event og ikon er det element man klikker på
-    product_template_copy.querySelector(".ikon1").onclick = function(ikon){
-      //ikon.currentTarget bruger vi fordi at ikon ikke har attributter
 
     //ikon.currentTarget bruger vi fordi at ikon ikke har attributter
       // getElementById bruger vi fordi qs ikke virker med id'er som er numre
     product_template_copy.querySelector(".ikon1").onclick = function(ikon){
       document.getElementById(ikon.currentTarget.getAttribute("data-id")).textContent = product.season;
-
+      
     }
 
     product_template_copy.querySelector(".ikon2").onclick = function(ikon){
@@ -93,12 +106,15 @@ function debugShowCategories(){
     }
 
     //appende
-
+    //subcategory_template_copy.querySelector(".grid").appendChild(product_template_copy);
     if(product.Løvskov == true){
       document.querySelector(".loev .grid").appendChild(product_template_copy)
     } else if(product.Nåleskov == true){
       document.querySelector(".naal .grid").appendChild(product_template_copy)
     }
-  }});
+  });
+  //appende
+  //document.querySelector("main").appendChild(subcategory_template_copy);
 });
+  
 }
