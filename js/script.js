@@ -29,7 +29,7 @@ const subcategories = ['Løvskov', 'Nåleskov']; //erstat med fetch
  const subcategory_template = document.querySelector("#subcategory_template").content;
  const product_template = document.querySelector("#product_template").content;
 
-
+ //breadcrumb is active, markere hvilken kategories der ses
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
 document.querySelector("h1").textContent = category
@@ -41,7 +41,6 @@ fetch("https://kea-alt-del.dk/t7/api/products?limit=50&start=10&category=" + cat
 .then(showProducts);
 
 function showProducts(){
-    //looper og kalder showProuct ental
    // products.forEach(showProduct);
 
 
@@ -76,13 +75,19 @@ function debugShowCategories(subcategory){
     product_template_copy.querySelector(".text2").textContent= product.season;
     product_template_copy.querySelector(".product_img").src = product.image;
 
+    // for at kunne ændre på text 2 via onclick skal vi have en identificator på click elementet (data-id)
     product_template_copy.querySelector(".ikon1").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon2").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon3").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon4").setAttribute("data-id", product.id);
 
+    //onclick er js event og ikon er det element man klikker på
+
+    //ikon.currentTarget bruger vi fordi at ikon ikke har attributter
+      // getElementById bruger vi fordi qs ikke virker med id'er som er numre
     product_template_copy.querySelector(".ikon1").onclick = function(ikon){
       document.getElementById(ikon.currentTarget.getAttribute("data-id")).textContent = product.season;
+      
     }
 
     product_template_copy.querySelector(".ikon2").onclick = function(ikon){
