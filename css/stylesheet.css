@@ -121,14 +121,32 @@ h3 {
 }
 
 
-.grid_ikon .ikon1,
-.ikon2,
-.ikon3,
-.ikon4 {
+.grid_ikon .ikon1 img,
+.ikon2 img,
+.ikon3 img,
+.ikon4 img {
     border-radius: 50%;
     max-width: 80%;
-
+    margin: auto;
+    cursor: pointer;
 }
+
+.ikon1 ,
+.ikon2 ,
+.ikon3 ,
+.ikon4 {
+
+    cursor: pointer;
+}
+.ikon1:hover ,
+.ikon2:hover ,
+.ikon3:hover ,
+.ikon4:hover {
+
+    scale: 1.04;
+}
+
+
 
 .padding {
     padding: 12px;
@@ -310,6 +328,7 @@ footer {
         left: 7vw;
     }
 
+    
 
     /*******************************************/
 
@@ -346,6 +365,7 @@ footer {
         grid-template-columns: repeat(auto-fill, 400px);
         gap: 1rem;
         justify-content: space-between;
+        margin: auto;
     }
 
 
@@ -515,6 +535,10 @@ nav {
 
 .breadcrumb-item {
     border: 0.5px solid #ccc;
+}
+
+.breadcrumb-item.active {
+    border-bottom: 0px;
 }
 
 .breadcrumb-item a {
