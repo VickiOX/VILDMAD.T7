@@ -63,7 +63,7 @@ function debugShowCategories(){
 
 
     // for at kunne ændre på text 2 via onclick skal vi have en identificator på click elementet (data-id)
-    //
+    
     product_template_copy.querySelector(".ikon1").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon2").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon3").setAttribute("data-id", product.id);
