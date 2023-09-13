@@ -21,7 +21,7 @@ document.querySelector("." + category).classList.add("active");
 
 const subcategories = ['Løvskov', 'Nåleskov']; //hard code data
 function showProducts(){
-   
+
     subcategories.forEach(ShowCategoriesAndProducts);
 }
 
@@ -57,16 +57,16 @@ function ShowCategoriesAndProducts(){
     product_template_copy.querySelector(".text2").textContent= product.season;
    // product_template_copy.querySelector(".text3").textContent= product.season_p;
     product_template_copy.querySelector(".product_img").src = product.image;
-  
+
     // for at kunne ændre på text 2 via onclick skal vi have en identificator på click elementet (data-id)
     //
-    product_template_copy.querySelector(".ikon1").setAttribute("data-id", product.id); 
+    product_template_copy.querySelector(".ikon1").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon2").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon3").setAttribute("data-id", product.id);
     product_template_copy.querySelector(".ikon4").setAttribute("data-id", product.id);
 
     //onclick er js event og ikon er det element man klikker på
-    product_template_copy.querySelector(".ikon1").onclick = function(ikon){ 
+    product_template_copy.querySelector(".ikon1").onclick = function(ikon){
       //ikon.currentTarget bruger vi fordi at ikon ikke har attributter
       // getElementById bruger vi fordi qs ikke virker med id'er som er numre
       document.getElementById(ikon.currentTarget.getAttribute("data-id")).textContent = product.season;
