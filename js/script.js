@@ -104,6 +104,5 @@ function debugShowCategories(subcategory){
   //appende
   document.querySelector("main").appendChild(subcategory_template_copy);
 });
-
   
 }
