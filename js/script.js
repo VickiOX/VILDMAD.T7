@@ -26,7 +26,7 @@ function showData(items){
 const subcategories = ['Løvskov', 'Nåleskov']; //erstat med fetch
 
  //fange template
- const subcategory_template = document.querySelector("#subcategory_template").content;
+ //const subcategory_template = document.querySelector("#subcategory_template").content;
  const product_template = document.querySelector("#product_template").content;
 
  //breadcrumb is active, markere hvilken kategories der ses
@@ -35,11 +35,12 @@ const category = urlParams.get("category");
 document.querySelector("h1").textContent = category
 document.querySelector("." + category).classList.add("active");
 
-// fetch
+/* // fetch
 fetch("https://kea-alt-del.dk/t7/api/products?limit=50&start=10&category=" + category)
 .then(res=>res.json())
 .then(showProducts);
-
+ */
+/* showProducts()
 function showProducts(){
    // products.forEach(showProduct);
 
@@ -49,16 +50,18 @@ function showProducts(){
     subcategories.forEach(debugShowCategories);
 }
 
-function debugShowCategories(subcategory){
-  console.log(subcategory);
+ */
+debugShowCategories()
+function debugShowCategories(){
+
 
 
 
   //lave en kopi
-  const subcategory_template_copy = subcategory_template.cloneNode(true);
-  subcategory_template_copy.querySelector("h2").textContent = subcategory;
+  //const subcategory_template_copy = subcategory_template.cloneNode(true);
+  //subcategory_template_copy.querySelector("h2").textContent = subcategory;
 
-  fetch("https://jrbobbgkocqmvubehqtz.supabase.co/rest/v1/Vildmad_produkter?select=*&" + subcategory + "=eq.true&" + category + "=eq.true",{//brug * det henter alt
+  fetch("https://jrbobbgkocqmvubehqtz.supabase.co/rest/v1/Vildmad_produkter?select=*&" + category + "=eq.true",{//brug * det henter alt
   method:"GET",
   headers:{
       apikey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpyYm9iYmdrb2NxbXZ1YmVocXR6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTM5OTk5MTUsImV4cCI6MjAwOTU3NTkxNX0.Icz35OBcSiV2DSuLi9aszBlD1Bz2SJIqiTcaYc-9rSY"
@@ -103,11 +106,15 @@ function debugShowCategories(subcategory){
     }
 
     //appende
-    subcategory_template_copy.querySelector(".grid").appendChild(product_template_copy);
-
+    //subcategory_template_copy.querySelector(".grid").appendChild(product_template_copy);
+    if(product.Løvskov == true){
+      document.querySelector(".loev .grid").appendChild(product_template_copy)
+    } else if(product.Nåleskov == true){
+      document.querySelector(".naal .grid").appendChild(product_template_copy)
+    }
   });
   //appende
-  document.querySelector("main").appendChild(subcategory_template_copy);
+  //document.querySelector("main").appendChild(subcategory_template_copy);
 });
   
 }
