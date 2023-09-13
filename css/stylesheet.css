@@ -6,46 +6,6 @@
 */
 
 
-
-/************************FARVER**************************/
-
-/*Disse farver er ikke dem vi går med men er et eksemple*/
-
-html {
-    --primary-color: #6C805A;
-    /*color til baggrund*/
-
-    --secondary-color: #E4E4E4;
-    /*til font h1 og h2*/
-
-    --tertiary-color: #363636;
-    /*til font, heraf h3 og p*/
-
-    --footer-color: #647852;
-    /*color til footer*/
-
-    --forår-color: #BCC5B3;
-    /*baggrund farve til box*/
-
-    --sommer-color: #EBE1B3;
-    /*baggrund farve til box*/
-
-    --efterår-color: #CB9292;
-    /*baggrund farve til box*/
-
-    --vinter-color: #F2F2F2;
-    /*baggrund farve til box*/
-}
-
-/* når i skal skrive en farve skriv ex: 
-
-p{
-    color: var(----primary-color);
-}
-*/
-
-
-
 /*Mobilformat først*/
 /*startopsætnig*/
 * {
@@ -54,117 +14,26 @@ p{
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--primary-color);
-}
+/* grid der skal bruges til kategori-side*/
 
-
-/*************** KATEGORI MOBIL *******************/
-
-
-
-/*img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
     border-radius: 50%;
+}
+
+main {
+    margin: auto;
+    padding-top: 45%;
+    padding-bottom: 45%;
+}
+
+/*h1,
+h2 {
+    text-align: center;
+    padding-bottom: 2rem;
 }*/
-
-
-p {
-    font-size: 14px;
-}
-
-h1,
-h2 {
-    text-align: center;
-    color: var(--secondary-color);
-}
-
-h1 {
-    padding-top: 20px;
-}
-
-h2 {
-    padding-top: 30px;
-    padding-bottom: 20px;
-
-}
-
-h3 {
-    text-align: center;
-    padding: 12px;
-}
-
-.product {
-    border: 1px solid #000000;
-    border-radius: 30px;
-    position: relative;
-    margin: 30px;
-    max-width: 100%;
-
-}
-
-.grid_ikon {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 0 10px 0 10px;
-    text-align: center;
-    justify-items: center;
-}
-
-.product_img {
-    border-radius: 50%;
-    max-width: 30%;
-    margin: auto;
-    top: 100px;
-    display: block;
-}
-
-
-.grid_ikon .ikon1 img,
-.ikon2 img,
-.ikon3 img,
-.ikon4 img {
-    border-radius: 50%;
-    max-width: 80%;
-    margin: auto;
-    cursor: pointer;
-}
-
-.ikon1 ,
-.ikon2 ,
-.ikon3 ,
-.ikon4 {
-
-    cursor: pointer;
-}
-.ikon1:hover ,
-.ikon2:hover ,
-.ikon3:hover ,
-.ikon4:hover {
-
-    scale: 1.04;
-}
-
-
-
-.padding {
-    padding: 12px;
-}
-
-.text1 {
-    padding: 12px 20px 0 20px;
-}
-
-.text2 {
-    padding: 0 20px 12px 20px;
-}
-
-.text3{
-    padding: 0 20px 12px 20px;
-}
-
 
 /***********************FORSIDE************************************/
 .cirkel {
@@ -176,7 +45,6 @@ h3 {
     height: 80vw;
     border: 1px solid black;
     overflow: hidden;
-
 }
 
 .vinter,
@@ -244,36 +112,15 @@ h3 {
 }
 
 /*****************************FOOTER*************************/
-.footer_stay p {
-    /* dette hører til forsiden*/
+footer p {
     text-align: end;
     padding-top: 10px;
-    padding-right: 10px;
-}
-
-.footer_stay {
-    border-top: 1px solid black;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
-}
-
-footer p {
-    /* dette hører til kategori sitet*/
-    text-align: end;
-    padding: 10px 0;
-    padding-right: 10px;
 }
 
 footer {
     border-top: 1px solid black;
-}
-
-
-footer {
-    /* dette hører til kategori sitet og forsiden*/
-    background-color: var(--footer-color);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -284,21 +131,7 @@ footer {
 */
 
 
-
-
-
-@media (min-width: 450px) {
-    .product {
-        border: 1px solid #ccc;
-        padding: 1rem;
-        margin: 2rem auto;
-        max-width: 400px;
-    }
-}
-
-
 @media (min-width: 860px) {
-
     /*********************FORSIDE******************/
     .cirkel {
         width: 30vw;
@@ -331,245 +164,198 @@ footer {
         bottom: 8vw;
         left: 7vw;
     }
-
-    
-
     /*******************************************/
-
-
-    /************KATEGORI********************/
-
-    .breadcrumb {
-        justify-content: center;
-        text-align: center;
-    }
-
-
-    .product-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-top: 5%;
-        padding-left: 1%;
-    }
-
-    .product {
-        border: 1px solid #ccc;
-        padding: 1rem;
-        /* margin: 2rem 0 auto 0;*/
-        margin: auto;
-    }
-
-    .grid {
-        max-width: 860px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 400px);
-        gap: 1rem;
-        justify-content: space-between;
-        margin: auto;
-    }
-
-
-    /******************************/
-    /************************HEADER********************/
-
-    /*HEADER*/
-    
-    .scrollUl {
-    margin: 0;
-    padding: 0;
-    display: flex;
 }
 
-.scrollUl .scrollLi,
-li {
-    list-style: none;
+
+
+/******************** KATEGORI (BOX 1) - MOBIL ***********************/
+
+
+
+/* .kate-h2 {
+    font-size: xxx-large;
+    position: relative;
+    left: 42%;
+    padding-top: 11%;
+    padding-bottom: 10%;
 }
 
-.scrollUl .scrollLi a {
-    color: #fff;
-    padding: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5em;
-    margin: 0;
-}
-/*SUB MENU*/
-ul.dropdown {
-    display: block;
-    list-style: none;
-    padding: 20px;
+.kate-h3 {
+    position: relative;
+    left: 51%;
+    font-size: xx-large;
 }
 
-ul.dropdown {
-    background-color: rgb(76, 165, 135);
+.kate-p1 {
+    position: relative;
+    font-family: block;
+    left: 36%;
+    font-size: 14px;
+}
+
+.kate-p2 {
     position: absolute;
-    display: none;
+    font-family: block;
+    top: 62%;
+    left: -5%;
+    font-size: 14px;
 }
 
-.nav-link.kategorier:hover {
-    opacity: 0.5;
-}
-li:hover ul.dropdown{
-    display: block;
-}
-}
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    background: rgb(76, 165, 135);
-    padding: 0 20px;
+.ikon-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-.logo {
-    padding: 0 5px;
-    max-width: 80px;
-    height: auto;
-    display: block;
-    margin: auto;
+.ikon1,
+.ikon2,
+.ikon3,
+.ikon4 {
+    max-width: 85px;
+    height: 50px;
+    border-radius: 56%;
 }
 
-.vild-logo {
-    padding: 0 5px;
-    max-width: 80px;
-    height: auto;
-    display: block;
-    
-}
-/*hamburgermenu*/
-.nav-link {
-    display: flex;
-    padding: 5%;
-    margin: 0 50px;
+.ikon0 {
+    border-radius: 42%;
+    max-width: 199px;
+    height: 247px;
+    position: absolute;
+    top: 18%;
+    left: 1%;
 }
 
-.nav-item {
-    margin: 20px;
+.ikon1 {
+    position: relative;
+    top: 3%;
+    left: 34%;
 }
 
-.nav-link:active {
-    scale: 0.9;
+.ikon2 {
+    position: relative;
+    top: -131%;
+    left: 51%;
 }
 
-.navbar {
-    width: 100%;
-    min-height: 80px;
-    justify-content: space-between;
+.ikon3 {
+    position: relative;
+    left: 68%;
+    top: -262%;
+
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
+.ikon4 {
+    position: relative;
+    left: 85%;
+    top: -393%;
 }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
-    transition: all 0.3s ease;
-    background-color: rgb(255, 255, 255);
-}
-
-
-.containerBurger {
-    width: 100%;
-}
-
-.hamburger {
-    display: block;
-    margin: 10px;
-}
-
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-.nav-menu {
-    margin: auto;
-    display: block;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    min-height: 100vh;
-    position: fixed;
-    z-index: 0;
-    background-color: #5b8067df;
-    padding: 70px;
-    transition: 0.4s;
-}
-
-
-.nav-menu.active {
-    left: 0;
-}
-.kategorier, li{
-    font-size: 20px;
-    margin: 0 10px 0;
-    color: #c2dfc1;
-}
-
-/******************** BREADCRUMS ***********************/
-
-/* Default styles for breadcrumb */
-.breadcrumb {
+.grid {
+    /* grid der skal bruges til kategori-side*/
+/* max-width: 600px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    text-align: center;
-    padding: 12px 12px 0 12px;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 1rem;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 56px;
+    padding-bottom: 0%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 10%;
+} */
+
+
+
+/*************** KATEGORI (BOKS 2) - MOBIL ****************/
+
+
+/* .grid_2 {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 1rem;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 56px;
+    padding-bottom: 0%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-.breadcrumb-item {
-    border: 0.5px solid #ccc;
+.kate-p01 {
+    position: relative;
+    font-family: block;
+    font-size: 14px;
+    left: -9%;
 }
 
-.breadcrumb-item.active {
-    border-bottom: 0px;
+.kate-h3_2 {
+    position: relative;
+    left: 1%;
+    font-size: xx-large;
 }
 
-.breadcrumb-item a {
-    /* kun når han hover over kategorierne, at linen dukker op*/
-    text-decoration: none;
-    padding: 12px 0;
-    height: 100%;
-    width: 100%;
-    display: inline-block;
+.ikon00 {
+    border-radius: 42%;
+    max-width: 199px;
+    height: 247px;
+    position: absolute;
+    top: 89%;
+    left: 55%;
 }
 
-.breadcrumb-item a:hover {
-    text-decoration: underline;
+
+.ikon11,
+.ikon22,
+.ikon33,
+.ikon44 {
+    max-width: 85px;
+    height: 50px;
+    border-radius: 56%;
 }
 
-section {
-    box-sizing: border-box;
-    padding: 150px 100px 100px;
+.ikon22 {
+    position: relative;
+    left: 17%;
+    top: -133%;
 }
 
-/*img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}*/
-
-main {
-    margin: auto;
+.ikon33 {
+    position: relative;
+    top: -267%;
+    left: 34%;
 }
 
+.ikon44 {
+    position: relative;
+    top: -401%;
+    left: 51%;
+}
+
+.kate-p02 {
+    position: absolute;
+    font-family: block;
+    top: 134%;
+    left: -5%;
+    font-size: 14px;
+} */
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-top: 5%;
+    padding-left: 1%;
+}
+
+/*************** KATEGORI (BOX 1) - WEB ****************/
+
+@media (min-width: 860px) {}

@@ -4,48 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-    <link rel="stylesheet" href="css/stylesheet.css">
-
+    <link rel="stylesheet" href="/css/stylesheet.css">
     <title>index</title>
 </head>
 
 <body>
-    <header>
-        <!-- Navigations bar der gåt væk når man scroller ned og kommer frem når man scroller op-->
-        <div class="containerBurger">
-            <nav id="navbar">
-                <a href="https://vildmad.dk/dk"><img class="vild-logo" src="img/vild-mad-logo.webp" alt="">Vild Mad</a>
-                <a href="#"><img class="logo" src="img/logo.webp" alt="">logo</a>
-                <ul class="scrollUl nav-menu">
-                    <li class="scrollLi nav-item"><a href="#" class="nav-link">Hjem</a></li>
-                    <li class="scrollLi nav-item"><a href="html/kategori.html" class="nav-link">Kategori</a>
-                        <ul class="dropdown">
-                            <li><a href="/html/kategori.html?category=Vinter">
-                                    <h3 class="kategorier">Forår</h3>
-                                </a></li>
-                            <li><a href="/html/kategori.html?category=Vinter">
-                                    <h3 class="kategorier">Efterår</h3>
-                                </a></li>
-                            <li><a href="/html/kategori.html?category=Vinter">
-                                    <h3 class="kategorier">Vinter</h3>
-                                </a></li>
-                            <li><a href="/html/kategori.html?category=Vinter">
-                                    <h3 class="kategorier">Sommer</h3>
-                                </a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </div>
-    </header>
     <main>
         <!--Teknisk dokumentation, eksempelvis i form af: 
 ○ En overordnet forklaring af opbygningen og flowet i jeres scripts, gerne i form af diagrammer samt valgte navne-konventioner o.lign. 
@@ -54,33 +17,21 @@
 ○ Dokumentation af hvordan Git og branches er blevet brugt
 -->
 
-        <!--  Mobilformat først-->
-        <header></header>
-        <h1>Vild Mad</h1>
-        <h2>I skoven</h2>
+<!--  Mobilformat først-->
+    <header></header>
+    <h1>Vild Mad</h1>
+    <h2>I skoven</h2>
         <div class="cirkel">
-            <a href="/html/kategori.html?category=Vinter" class="vinter">
-                <p>vinter</p>
-            </a>
-            <a href="/html/kategori.html?category=Forår" class="forår">
-                <p>forår</p>
-            </a>
-            <a href="/html/kategori.html?category=Sommer" class="sommer">
-                <p>sommer</p>
-            </a>
-            <a href="/html/kategori.html?category=Efterår" class="efterår">
-                <p>efterår</p>
-            </a>
+            <a href="/html/kategori.html" class="vinter"><p>vinter</p></a>
+            <a href="/html/kategori.html" class="forår"><p >forår</p></a>
+            <a href="/html/kategori.html" class="sommer"><p >sommer</p></a>
+            <a href="/html/kategori.html" class="efterår"><p >efterår</p></a>
         </div>
 
     </main>
-
-
-    <footer class="footer_stay">
+    <footer>
         <p>@copyright</p>
     </footer>
-
-    <script src="js/header.js"></script>
 </body>
 
 </html>
