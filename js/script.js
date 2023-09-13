@@ -90,7 +90,7 @@ function debugShowCategories(){
       // getElementById bruger vi fordi qs ikke virker med id'er som er numre
     product_template_copy.querySelector(".ikon1").onclick = function(ikon){
       document.getElementById(ikon.currentTarget.getAttribute("data-id")).textContent = product.season;
-      
+
     }
 
     product_template_copy.querySelector(".ikon2").onclick = function(ikon){
@@ -116,5 +116,5 @@ function debugShowCategories(){
   //appende
   //document.querySelector("main").appendChild(subcategory_template_copy);
 });
-  
+
 }
