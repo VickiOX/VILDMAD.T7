@@ -94,7 +94,7 @@ function debugShowCategories(){
     }
 
     //appende
-   
+
     if(product.Løvskov == true){
       document.querySelector(".loev .grid").appendChild(product_template_copy)
     } else if(product.Nåleskov == true){
