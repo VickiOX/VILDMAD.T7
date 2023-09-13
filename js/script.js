@@ -14,6 +14,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
 document.querySelector("h1").textContent = category
+
+console.log(category);
 document.querySelector("." + category).classList.add("active");
 
 
@@ -23,17 +25,27 @@ function showProducts(){
     subcategories.forEach(ShowCategoriesAndProducts);
 }
 
-function ShowCategoriesAndProducts(subcategory){
+
+ShowCategoriesAndProducts(subcategory);
+
+
+
+function ShowCategoriesAndProducts(){
   //lave en kopi
   const subcategory_template_copy = subcategory_template.cloneNode(true);
   subcategory_template_copy.querySelector("h2").textContent = subcategory;
 
   fetch("https://jrbobbgkocqmvubehqtz.supabase.co/rest/v1/Vildmad_produkter?select=*&" + subcategory + "=eq.true&" + category + "=eq.true",{//brug * det henter alt
-  method:"GET",
+ method:"GET",
   headers:{
       apikey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpyYm9iYmdrb2NxbXZ1YmVocXR6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTM5OTk5MTUsImV4cCI6MjAwOTU3NTkxNX0.Icz35OBcSiV2DSuLi9aszBlD1Bz2SJIqiTcaYc-9rSY"
   }
 })
+
+
+
+
+
 .then((res) => res.json())
 .then(products =>{
   products.forEach(product => {
@@ -43,6 +55,7 @@ function ShowCategoriesAndProducts(subcategory){
     product_template_copy.querySelector("h3").textContent= product.name;
     product_template_copy.querySelector(".text1").textContent= product.bio;
     product_template_copy.querySelector(".text2").textContent= product.season;
+   // product_template_copy.querySelector(".text3").textContent= product.season_p;
     product_template_copy.querySelector(".product_img").src = product.image;
   
     // for at kunne ændre på text 2 via onclick skal vi have en identificator på click elementet (data-id)
@@ -77,7 +90,6 @@ function ShowCategoriesAndProducts(subcategory){
   });
   //appende
   document.querySelector("main").appendChild(subcategory_template_copy);
-});
-
-  
+}
+);
 }
